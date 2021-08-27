@@ -31,7 +31,7 @@ if (media > 20) {
 
 
 //5
-let biggestValue = 0;
+let biggestValue = numbers[0];
 
 for (let number of numbers) {
     if (number > biggestValue) {
@@ -39,7 +39,7 @@ for (let number of numbers) {
     }
 }
 
-console.log(biggestValue);
+console.log('o maior número é: ' + biggestValue);
 
 
 //6
