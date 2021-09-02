@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        const pDescription = document.getElementsByTagName("p")[0];
+        const newText = "Eu espero estar num emprego com carteira assinada, que me pague mais de R$ 3.000,00 mensais";
+
+        function changePText(element, text) {
+            element.innerText = text;
+        }
+
+        changePText(pDescription, newText);
+
+        const mainContent = document.getElementsByClassName("main-content")[0];
+
+        function changeYellowBox(element, color) {
+            element.style.backgroundColor = color;
+        }
+
+        changeYellowBox(mainContent, "rgb(76,164,109)");
+
+        const centerContent = document.getElementsByClassName("center-content")[0];
+
+        function changeRedBox(element, color) {
+            element.style.backgroundColor = color;
+        }
+
+        changeRedBox(centerContent, "white");
+
+        function changeH1() {
+            const h1 = document.getElementsByTagName("h1")[0];
+
+            h1.innerText = "Exercício 5.1 - JavaScript";
+        }
+
+        changeH1();
+
+        function casedP(element) {
+            element.style.textTransform = "capitalize";
+        }
+
+        casedP(pDescription);
+
+        const allP = document.getElementsByTagName("p");
+        
+        function logP(array) {
+            for (let element of array) {
+                console.log(element.innerText);
+            }
+        }
+
+        logP(allP);
+        
+
+    </script>
+  </body>
+</html>
