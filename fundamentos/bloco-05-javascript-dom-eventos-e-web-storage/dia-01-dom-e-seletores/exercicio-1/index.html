@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="new-paragraph">Novo parágrafo 1</p>
+      <p class="new-paragraph">Novo parágrafo 2</p>
+    </header>
+    <script>
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+      const title = document.querySelector("#page-title");
+      title.innerText = "2001: uma Odisseia no Espaço";
+      const secondParagraph = document.querySelector("#second-paragraph");
+      secondParagraph.style.color = "purple";
+      const subtitle = document.querySelector("#subtitle");
+      subtitle.style.fontSize = "30px";
+      const newParagraphs = document.querySelectorAll(".new-paragraph");
+      newParagraphs[0].style.color = "red";
+      document.querySelectorAll("h4")[0].style.color = "green";
+    </script>
+  </body>
+</html>
