@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+body {
+    margin: 0 20px;
+}
+
+.text {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: Times;
+}
