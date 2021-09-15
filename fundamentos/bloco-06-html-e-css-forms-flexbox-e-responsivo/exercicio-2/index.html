@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulário de currículo</title>
+</head>
+<body>
+    <fieldset>
+        <input type="text" name="name" required maxlength="40" placeholder="Nome"><br>
+        <input type="text" name="email" required maxlength="50" placeholder="E-mail"><br>
+        <input type="text" name="cpf" required maxlength="11" placeholder="CPF"><br>
+        <input type="text" name="address" required maxlength="200" placeholder="Endereço"><br>
+        <input type="text" name="city" required maxlength="28" placeholder="Cidade"><br>
+        <label for="estados"></label>
+        <select name="estados" id="estados"></select><br>
+        <input type="radio" name="tipo-de-moradia" id="casa">Casa
+        <input type="radio" name="tipo-de-moradia" id="apto">Apartamento
+    </fieldset>
+    <fieldset>
+        <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" placeholder="Resumo do currículo" required maxlength="1000"></textarea><br>
+        <input type="text" name="job" required maxlength="40" placeholder="Cargo"><br>
+        <input type="text" name="job-description" required maxlength="500" placeholder="Descrição do cargo"><br>
+        <input type="text" name="start-date" id="start-date" required maxlength="10" placeholder="dd/mm/aaaa"><br>
+        <button type="submit" id="submit">Enviar</button>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
