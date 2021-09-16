@@ -19,6 +19,9 @@ function listOfStates() {
 
 listOfStates();
 
+/**
+ * Fonte da expressão regular: https://www.regextester.com/99555
+ */
 function checkDate(value) {
     const regex = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
     let isDate = regex.test(value);
